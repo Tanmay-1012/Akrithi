@@ -25,9 +25,10 @@ export default function Phone() {
     }, 200);
   };
 
-  const handleUnlock = (e: React.FormEvent) => {
+  const handleUnlock = (e: React.FormEvent, pinToCheck?: string) => {
     e.preventDefault();
-    if (password === correctPassword) {
+    const checkPassword = pinToCheck || password;
+    if (checkPassword === correctPassword) {
       transitionTo("home");
       setPassword("");
       setAttempts(0);
@@ -214,7 +215,7 @@ function LockScreen({ password, setPassword, handleUnlock, attempts }: {
                   if (newPassword.length === 4) {
                     setTimeout(() => {
                       const e = { preventDefault: () => {} } as React.FormEvent;
-                      handleUnlock(e);
+                      handleUnlock(e, newPassword);
                     }, 100);
                   }
                 }
@@ -237,7 +238,7 @@ function LockScreen({ password, setPassword, handleUnlock, attempts }: {
                 if (newPassword.length === 4) {
                   setTimeout(() => {
                     const e = { preventDefault: () => {} } as React.FormEvent;
-                    handleUnlock(e);
+                    handleUnlock(e, newPassword);
                   }, 100);
                 }
               }
