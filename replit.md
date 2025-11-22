@@ -2,11 +2,33 @@
 
 ## Overview
 
-This is an interactive single-page web application that simulates a Samsung S25 Ultra phone interface as part of a murder mystery experience. The application recreates Samsung's One UI 7 design language with authentic phone interactions including lock screen, home screen, and various apps (Messages, Gallery, Notes, Phone, Recorder). Users unlock the phone and explore different apps to uncover evidence and clues related to the mystery narrative.
+This is an interactive single-page web application that simulates a Samsung S25 Ultra phone interface as part of a murder mystery experience centered on a murdered victim named "Akriti". The application recreates Samsung's One UI 7 design language with authentic phone interactions including lock screen, home screen, and various apps (Messages, Gallery, Notes, Phone, Recorder). Users unlock the phone (PIN: 0712) and explore different apps to uncover evidence and clues related to the mystery narrative.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Deadline: Monday
+
+## Mystery Evidence & Content
+
+**Password**: 0712 (4-digit PIN entered via number keypad on lock screen)
+
+**Evidence Distribution**:
+1. **Messages App**: 
+   - Unknown Number: Threatening message "I KNOW YOUR SECRET AND I WON'T LET YOU GO"
+   - Meenakshi: Hacking confession "SORRY I SHOULDN'T HAVE HACKED YOUR PHONE"
+2. **Gallery App**: 3 suspicious photos - deleted/recovery failed, unknown location timestamp, encrypted screenshot
+3. **Notes App**: 2 diary entries showing paranoia ("I can't trust anyone anymore") and danger ("Meeting at 11 PM")
+4. **Phone App**: 3 call logs - missed call from Unknown, incoming from Meenakshi, outgoing to Unknown
+5. **Recorder App**: 2 recordings - normal conversation and corrupted/deleted file
+
+**Recent Changes (Nov 22, 2025)**:
+- Implemented complete phone UI with 7 functional screens
+- Added Samsung-style number keypad with PIN dots for lock screen
+- Created all evidence apps with proper content and styling
+- Fixed password validation bug (now passes new password value directly to handler)
+- Added comprehensive data-testid coverage for testing
+- Verified complete end-to-end mystery phone experience via Playwright tests
 
 ## System Architecture
 
