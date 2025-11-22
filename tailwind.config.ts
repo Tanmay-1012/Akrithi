@@ -16,6 +16,11 @@ export default {
         foreground: "hsl(var(--foreground) / <alpha-value>)",
         border: "hsl(var(--border) / <alpha-value>)",
         input: "hsl(var(--input) / <alpha-value>)",
+        // Samsung One UI colors
+        'samsung-blue': '#1e88e5',
+        'samsung-green': '#00c853',
+        'samsung-surface': '#1a1a1a',
+        'samsung-bg': '#0a0a0a',
         card: {
           DEFAULT: "hsl(var(--card) / <alpha-value>)",
           foreground: "hsl(var(--card-foreground) / <alpha-value>)",
@@ -83,9 +88,13 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
+        sans: ["Roboto", "system-ui", "sans-serif"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
+      },
+      boxShadow: {
+        'phone': '0 20px 60px rgba(0, 0, 0, 0.8)',
+        'message': '0 1px 2px rgba(0, 0, 0, 0.3)',
       },
       keyframes: {
         "accordion-down": {
