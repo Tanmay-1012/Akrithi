@@ -768,20 +768,6 @@ function GalleryScreen({ goBack }: { goBack: () => void }) {
 function NotesScreen({ goBack }: { goBack: () => void }) {
   const notes = [
     {
-      id: "note-1",
-      title: "I can't trust anyone anymore",
-      content: "Someone knows what I did. They're watching me. I need to be careful.",
-      date: "Nov 20",
-      color: "bg-yellow-100"
-    },
-    {
-      id: "note-2",
-      title: "Meeting at 11 PM",
-      content: "Unknown caller wants to meet. Should I go? This feels dangerous.",
-      date: "Nov 21",
-      color: "bg-pink-100"
-    },
-    {
       id: "note-3",
       title: "Parcel the evidence to Rithika",
       content: "Need to send the evidence package to Rithika",
