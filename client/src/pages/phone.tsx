@@ -784,8 +784,8 @@ function NotesScreen({ goBack }: { goBack: () => void }) {
     {
       id: "note-3",
       title: "Parcel the evidence to Rithika",
-      content: "Nov 24th, 10:30 PM - Need to send the evidence package to Rithika",
-      date: "Nov 24",
+      content: "Need to send the evidence package to Rithika",
+      date: "Nov 24, 10:30 PM",
       color: "bg-blue-100"
     },
   ];
