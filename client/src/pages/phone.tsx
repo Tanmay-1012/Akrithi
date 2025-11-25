@@ -197,7 +197,7 @@ function LockScreen({ password, setPassword, handleUnlock, attempts, isLocked, t
   };
 
   return (
-    <div className="h-full flex flex-col items-center justify-between py-20 px-6 bg-[url('/lockscreen_dishwasher.png')] bg-cover bg-center relative">
+    <div className="h-full flex flex-col items-center justify-between py-20 px-6 bg-[url('/lockscreen_capybara.png')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-black/10 backdrop-blur-[0px]" />
 
       <div className="flex-1 flex flex-col items-center justify-center relative z-10">
@@ -595,7 +595,7 @@ function ConversationScreen({ conversationId, goBack }: {
       messages: [
         {
           text: "you are really outspoken and you have the fire the reveal the truth and so you should join the journalist club...just lmk when will you be free!",
-          sent: true,
+          sent: false,
           time: "Yesterday, 4:30 PM",
           id: "msg-rithika-1"
         }
