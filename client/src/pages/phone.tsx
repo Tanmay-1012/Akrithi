@@ -448,7 +448,7 @@ function MessagesScreen({ openConversation, goBack }: {
       id: "unknown" as const,
       name: "9876543232",
       preview: "I KNOW UR SECRET AND I WONT LET YOU...",
-      time: "10:00 PM",
+      time: "10:00 AM",
       unread: true,
       color: "bg-gray-600"
     },
@@ -465,7 +465,7 @@ function MessagesScreen({ openConversation, goBack }: {
       id: "rithika" as const,
       name: "RITHIKA",
       preview: "you are really outspoken and you have...",
-      time: "Yesterday",
+      time: "10:00 AM",
       unread: true,
       color: "bg-purple-600"
     },
@@ -571,7 +571,7 @@ function ConversationScreen({ conversationId, goBack }: {
         {
           text: "I KNOW UR SECRET AND I WONT LET YOU AND SHIVAAY GET AWAY WITH THIS!\nI WILL EXPOSE YOU",
           sent: true,
-          time: "10:00 PM",
+          time: "10:00 AM",
           id: "msg-unknown-1"
         },
       ],
@@ -594,10 +594,22 @@ function ConversationScreen({ conversationId, goBack }: {
       color: "bg-purple-600",
       messages: [
         {
+          text: "where should i meet you",
+          sent: false,
+          time: "Yesterday, 9:45 PM",
+          id: "msg-rithika-1"
+        },
+        {
+          text: "i will see you in college and give you the evidence",
+          sent: true,
+          time: "Yesterday, 10:30 PM",
+          id: "msg-rithika-2"
+        },
+        {
           text: "you are really outspoken and you have the fire the reveal the truth and so you should join the journalist club...just lmk when will you be free!",
           sent: false,
-          time: "Yesterday, 4:30 PM",
-          id: "msg-rithika-1"
+          time: "10:00 AM",
+          id: "msg-rithika-3"
         }
       ]
     },
