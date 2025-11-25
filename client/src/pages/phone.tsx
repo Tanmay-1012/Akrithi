@@ -781,6 +781,13 @@ function NotesScreen({ goBack }: { goBack: () => void }) {
       date: "Nov 21",
       color: "bg-pink-100"
     },
+    {
+      id: "note-3",
+      title: "Parcel the evidence to Rithika",
+      content: "Nov 24th, 10:30 PM - Need to send the evidence package to Rithika",
+      date: "Nov 24",
+      color: "bg-blue-100"
+    },
   ];
 
   return (
@@ -897,7 +904,7 @@ function RecorderScreen({ goBack }: { goBack: () => void }) {
       id: "recording-2",
       title: "Deleted Recording",
       duration: "Unknown",
-      date: "Nov 20, 11:15 PM",
+      date: "Nov 24, 12:05 PM",
       corrupted: true
     },
   ];
